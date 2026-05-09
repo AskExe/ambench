@@ -1,0 +1,19 @@
+# Third-party datasets / cloned benchmark repos
+benchmarks/
+data/
+datasets/
+external/
+raw/
+
+# Generated benchmark outputs
+results/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.parquet
+
+# Local env
+.env
+.DS_Store
+node_modules/

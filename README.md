@@ -21,6 +21,12 @@ BENCHMARK=locomo npx tsx tests/benchmarks/run-all.ts --only locomo --fts
 BENCHMARK=beam   npx tsx tests/benchmarks/run-all.ts --only beam --fts
 ```
 
+## First-party benchmark
+
+| Benchmark | Owner | Status | Source | Notes |
+|---|---|---|---|---|
+| AMBench | AskExe | First-party benchmark; source of truth lives in this repo | <https://github.com/AskExe/ambench> | AMBench is our own agent-memory benchmark. It should contain our methodology, adapters, fixtures, scoring, and published exe-os runs. Third-party datasets referenced below should stay external and not be vendored here. |
+
 ## Public benchmark sources
 
 | Benchmark | Runnable status | Suggested local path | Env var | Public source |

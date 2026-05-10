@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-05-09T00:00:00Z",
+  "mode": "diagnostic_retrieval",
+  "notes": [
+    "Retrieval diagnostics are not official generated-answer benchmark scores.",
+    "MemoryAgentBench had no runnable public cases in the local snapshot."
+  ],
+  "results": [
+    {"benchmark":"LoCoMo","cases":1986,"memories":"5882 turns","metrics":{"hit_rate":0.170,"avg_f1":0.108},"command":"npx tsx harness/exe-os/run-all.ts --only locomo --fts"},
+    {"benchmark":"LongMemEval","cases":500,"memories":"23867 sessions","metrics":{"recall_at_1":0.872,"recall_at_5":0.966,"recall_at_10":0.978,"latency_ms_avg":265},"command":"npx tsx harness/exe-os/longmemeval.ts --fts"},
+    {"benchmark":"MemBench","cases":500,"memories":"17997 turns sample","metrics":{"hit_rate":0.262,"avg_f1":0.108,"latency_ms_avg":69}},
+    {"benchmark":"REALTALK","cases":728,"memories":"650447 turns","metrics":{"hit_rate":0.596,"avg_f1":0.090,"latency_ms_avg":3}},
+    {"benchmark":"MemoryArena","cases":4850,"memories":"9700 records","metrics":{"hit_rate":0.775,"avg_f1":0.522,"latency_ms_avg":123}},
+    {"benchmark":"BEAM","cases":400,"memories":"114640 turns","metrics":{"hit_rate":0.445,"avg_f1":0.126,"latency_ms_avg":14}}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AMBench public memory benchmark result",
+  "type": "object",
+  "required": ["benchmark", "mode", "generated_at", "metrics"],
+  "properties": {
+    "benchmark": { "type": "string" },
+    "dataset": { "type": "string" },
+    "split": { "type": "string" },
+    "mode": { "enum": ["diagnostic_retrieval", "official_answer", "official_task"] },
+    "repo": { "type": "string" },
+    "commit": { "type": "string" },
+    "model": { "type": "string" },
+    "retriever": { "type": "string" },
+    "top_k": { "type": "integer" },
+    "retrieve_depth": { "type": "integer" },
+    "reranker": { "type": ["string", "null"] },
+    "latency_ms_avg": { "type": ["number", "null"] },
+    "hardware": { "type": ["string", "null"] },
+    "generated_at": { "type": "string" },
+    "metrics": { "type": "object" },
+    "misses_path": { "type": ["string", "null"] },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}
